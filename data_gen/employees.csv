@@ -1,0 +1,101 @@
+employee_id,name,role,region_code,hire_date,is_active
+EMP0001,Empleado_1,Ground Staff,GRU,2015-05-11,1
+EMP0002,Empleado_2,Piloto,LIM,2016-08-27,1
+EMP0003,Empleado_3,Administrativo,SCL,2023-03-28,1
+EMP0004,Empleado_4,Mantencion,GRU,2023-03-02,1
+EMP0005,Empleado_5,Ground Staff,LIM,2022-06-17,0
+EMP0006,Empleado_6,Administrativo,BOG,2023-08-23,1
+EMP0007,Empleado_7,Ground Staff,BOG,2018-09-17,1
+EMP0008,Empleado_8,Tripulante Cabina,EZE,2020-01-03,1
+EMP0009,Empleado_9,Administrativo,GRU,2023-04-29,0
+EMP0010,Empleado_10,Administrativo,BOG,2023-03-12,1
+EMP0011,Empleado_11,Tripulante Cabina,BOG,2022-11-20,0
+EMP0012,Empleado_12,Administrativo,MIA,2023-07-18,1
+EMP0013,Empleado_13,Ground Staff,GRU,2021-09-10,1
+EMP0014,Empleado_14,Tripulante Cabina,EZE,2016-08-27,1
+EMP0015,Empleado_15,Piloto,MIA,2017-10-04,0
+EMP0016,Empleado_16,Ground Staff,BOG,2019-12-17,1
+EMP0017,Empleado_17,Ground Staff,MIA,2020-09-20,1
+EMP0018,Empleado_18,Tripulante Cabina,GRU,2021-03-31,1
+EMP0019,Empleado_19,Mantencion,stgo,2021-09-17,1
+EMP0020,Empleado_20,Mantencion,LIM,2019-10-21,
+EMP0021,Empleado_21,Ground Staff,EZE,2015-04-16,1
+EMP0022,Empleado_22,Administrativo,LIM,2022-04-03,1
+EMP0023,Empleado_23,Tripulante Cabina,LIM,2016-12-16,0
+EMP0024,Empleado_24,Tripulante Cabina,GRU,2023-02-11,1
+EMP0025,Empleado_25,Piloto,LIM,2017-05-05,
+EMP0026,Empleado_26,Administrativo,GRU,2021-02-16,1
+EMP0027,Empleado_27,Ground Staff,EZE,2021-01-27,1
+EMP0028,Empleado_28,Administrativo,SCL,2016-04-30,
+EMP0029,Empleado_29,Mantencion,MIA,2018-03-27,1
+EMP0030,Empleado_30,Tripulante Cabina,EZE,2020-03-21,1
+EMP0031,Empleado_31,Administrativo,GRU,2016-01-10,1
+EMP0032,Empleado_32,Tripulante Cabina,EZE,2020-10-17,1
+EMP0033,Empleado_33,Piloto,MIA,2019-06-18,1
+EMP0034,Empleado_34,Administrativo,SCL,2023-02-26,0
+EMP0035,Empleado_35,Administrativo,LIM,2021-06-02,0
+EMP0036,Empleado_36,Piloto,SCL,2017-07-24,
+EMP0037,Empleado_37,Piloto,MIA,2015-06-10,1
+EMP0038,Empleado_38,Mantencion,SCL,2017-06-29,1
+EMP0039,Empleado_39,Piloto,SCL,2017-03-04,1
+EMP0040,Empleado_40,Ground Staff,LIM,2016-05-23,
+EMP0041,Empleado_41,Tripulante Cabina,bogota,2020-12-05,1
+EMP0042,Empleado_42,Mantencion,EZE,2016-04-08,1
+EMP0043,Empleado_43,Piloto,SCL,2023-01-07,1
+EMP0044,Empleado_44,Ground Staff,LIM,2022-04-03,1
+EMP0045,Empleado_45,Administrativo,LIM,2018-10-06,1
+EMP0046,Empleado_46,Tripulante Cabina,EZE,2021-04-26,1
+EMP0047,Empleado_47,Tripulante Cabina,EZE,2015-06-26,1
+EMP0048,Empleado_48,Administrativo,BOG,2017-09-11,1
+EMP0049,Empleado_49,Mantencion,EZE,2019-05-08,1
+EMP0050,Empleado_50,Administrativo,GRU,2015-11-23,1
+EMP0051,Empleado_51,Piloto,MIA,2018-03-07,1
+EMP0052,Empleado_52,Administrativo,GRU,2015-07-11,1
+EMP0053,Empleado_53,Tripulante Cabina,SCL,2023-04-24,1
+EMP0054,Empleado_54,Piloto,SCL,2016-06-07,1
+EMP0055,Empleado_55,Piloto,Santiago,2023-10-25,1
+EMP0056,Empleado_56,Piloto,LIM,2023-10-12,1
+EMP0057,Empleado_57,Piloto,EZE,2016-11-19,1
+EMP0058,Empleado_58,Tripulante Cabina,SCL,2016-04-02,1
+EMP0059,Empleado_59,Ground Staff,EZE,2022-01-28,0
+EMP0060,Empleado_60,Piloto,SCL,2020-10-27,1
+EMP0061,Empleado_61,Mantencion,SCL,2019-04-17,1
+EMP0062,Empleado_62,Mantencion,,2023-10-07,1
+EMP0063,Empleado_63,Ground Staff,,2017-10-30,
+EMP0064,Empleado_64,Administrativo,SCL,2019-07-05,0
+EMP0065,Empleado_65,Administrativo,BOG,2021-10-11,1
+EMP0066,Empleado_66,Ground Staff,SCL,2021-07-14,1
+EMP0067,Empleado_67,Mantencion,MIA,2020-09-10,1
+EMP0068,Empleado_68,Piloto,GRU,2022-07-03,1
+EMP0069,Empleado_69,Mantencion,stgo,2022-06-29,1
+EMP0070,Empleado_70,Tripulante Cabina,GRU,2020-06-07,1
+EMP0071,Empleado_71,Mantencion,GRU,2020-10-22,1
+EMP0072,Empleado_72,Piloto,GRU,2023-03-04,1
+EMP0073,Empleado_73,Mantencion,SCL,2016-02-18,1
+EMP0074,Empleado_74,Administrativo,SCL,2022-04-07,1
+EMP0044,Empleado_75,Administrativo,GRU,2015-05-27,1
+EMP0076,Empleado_76,Mantencion,LIM,2021-04-16,1
+EMP0077,Empleado_77,Ground Staff,Santiago,2015-03-07,1
+EMP0078,Empleado_78,Tripulante Cabina,GRU,2015-04-16,1
+EMP0079,Empleado_79,Tripulante Cabina,MIA,2019-12-18,0
+EMP0080,Empleado_80,Tripulante Cabina,MIA,2016-11-07,1
+EMP0081,Empleado_81,Administrativo,LIM,2016-08-17,1
+EMP0082,Empleado_82,Tripulante Cabina,GRU,2019-02-04,
+EMP0083,Empleado_83,Piloto,LIM,2015-04-05,1
+EMP0084,Empleado_84,Ground Staff,EZE,2021-05-27,1
+EMP0085,Empleado_85,Ground Staff,GRU,2019-03-04,1
+EMP0086,Empleado_86,Ground Staff,BOG,2015-03-08,0
+EMP0087,Empleado_87,Mantencion,SCL,2018-03-01,0
+EMP0088,Empleado_88,Piloto,SCL,2015-08-12,1
+EMP0089,Empleado_89,Mantencion,GRU,2016-04-30,0
+EMP0090,Empleado_90,Piloto,EZE,2023-11-20,0
+EMP0091,Empleado_91,Administrativo,bogota,2021-06-25,0
+EMP0092,Empleado_92,Administrativo,LIM,2016-01-10,
+EMP0093,Empleado_93,Administrativo,EZE,2020-11-11,1
+EMP0094,Empleado_94,Mantencion,stgo,2015-06-22,1
+EMP0084,Empleado_95,Ground Staff,LIM,2022-08-17,1
+EMP0008,Empleado_96,Piloto,SCL,2023-11-20,0
+EMP0097,Empleado_97,Administrativo,GRU,2019-04-11,1
+EMP0098,Empleado_98,Ground Staff,SCL,2022-07-11,1
+EMP0099,Empleado_99,Mantencion,LIM,2018-10-25,1
+EMP0100,Empleado_100,Ground Staff,EZE,2018-05-31,1
