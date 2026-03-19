@@ -30,3 +30,20 @@ uniformes para una aerolínea LATAM: desde datos crudos hasta dashboard ejecutiv
 - Cantidades: unidades enteras (INTEGER)
 - Tallas válidas: XS · S · M · L · XL · XXL · UNK
 - Regiones válidas: SCL · LIM · BOG · GRU · EZE · MIA
+
+## Dashboard Looker Studio
+
+Link: [Ver dashboard](https://lookerstudio.google.com/reporting/e06687b5-e038-4316-94be-3739edc206b8/page/srjsF/edit)
+
+### Páginas
+
+| Página | Descripción | Fuentes de datos |
+|---|---|---|
+| Executive Overview | KPIs generales, demanda proyectada 2027 y top críticos | mart_purchase_reco_2027, mart_demand_forecast_2027 |
+| Operación | Heatmap talla × región y demanda neta por región | mart_size_heatmap, mart_kpis_weekly |
+| Alertas y Riesgos | Alertas activas P1/P2 con owner y detalle | mart_alerts_daily |
+
+### Capturas
+![Executive Overview](looker/screenshots/01_executive_overview.png)
+![Operación](looker/screenshots/02_operacion.png)
+![Alertas](looker/screenshots/03_alertas.png)
