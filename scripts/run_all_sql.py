@@ -255,7 +255,6 @@ SQLS = [
 
   ("fct_inventory_daily", """
     CREATE OR REPLACE TABLE `latam-uniforms-portfolio.latam_uniforms.fct_inventory_daily`
-    PARTITION BY snapshot_date
     AS
     SELECT
       snapshot_id,
