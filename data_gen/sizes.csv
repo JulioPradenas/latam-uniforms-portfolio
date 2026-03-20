@@ -1,8 +1,8 @@
 size_code,size_label,sort_order,notes
-XS,Extra Small,1,
-S,Small,2,
-M,Medium,3,
-L,Large,4,
-XL,Extra Large,5,
-XXL,Double Extra Large,6,
+XS,Extra Small,1,~5% del total
+S,Small,2,~15% del total
+M,Medium,3,~35% del total
+L,Large,4,~30% del total
+XL,Extra Large,5,~10% del total
+XXL,Double Extra Large,6,~5% del total
 UNK,Unknown / Dirty,99,Registros con talla no reconocida
