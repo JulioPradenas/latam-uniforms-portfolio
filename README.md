@@ -163,9 +163,6 @@ python scripts/run_all_sql.py
 - **Python** — carga de datos y exportación
 - **Google Sheets / Excel** — output ejecutivo
 
-## Dashboard Looker Studio
-
-Link: [Ver dashboard]
 
 ### Páginas
 
@@ -174,8 +171,3 @@ Link: [Ver dashboard]
 | Executive Overview | KPIs generales, demanda proyectada 2027 y top críticos | mart_purchase_reco_2027, mart_demand_forecast_2027 |
 | Operación | Heatmap talla × región y demanda neta por región | mart_size_heatmap, mart_kpis_weekly |
 | Alertas y Riesgos | Alertas activas P1/P2 con owner y detalle | mart_alerts_daily |
-
-### Capturas
-![Executive Overview](looker/screenshots/01_executive_overview.png)
-![Operación](looker/screenshots/02_operacion.png)
-![Alertas](looker/screenshots/03_alertas.png)
