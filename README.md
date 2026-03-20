@@ -36,7 +36,7 @@ Looker Studio / Google Sheets → consumo ejecutivo
 
 ## 📊 Dashboard Looker Studio
 
-🔗 [Ver dashboard en vivo](https://lookerstudio.google.com/TU-LINK-AQUI)
+🔗 [Ver dashboard en vivo] (https://lookerstudio.google.com/reporting/e06687b5-e038-4316-94be-3739edc206b8/page/srjsF/edit)
 
 ### Executive Overview
 ![Executive Overview](looker/screenshots/01_executive_overview.png)
@@ -165,7 +165,7 @@ python scripts/run_all_sql.py
 
 ## Dashboard Looker Studio
 
-Link: [Ver dashboard](https://lookerstudio.google.com/reporting/e06687b5-e038-4316-94be-3739edc206b8/page/srjsF/edit)
+Link: [Ver dashboard]
 
 ### Páginas
 
