@@ -15,6 +15,9 @@ SELECT
     WHEN LOWER(TRIM(region_code)) IN ('santiago','stgo') THEN 'SCL'
     WHEN LOWER(TRIM(region_code)) = 'lima'               THEN 'LIM'
     WHEN LOWER(TRIM(region_code)) IN ('bogota','bogotá')  THEN 'BOG'
+    WHEN LOWER(TRIM(region_code)) IN ('sao paulo','gru')  THEN 'GRU'
+    WHEN LOWER(TRIM(region_code)) IN ('buenos aires','eze') THEN 'EZE'
+    WHEN LOWER(TRIM(region_code)) = 'miami'              THEN 'MIA'
     ELSE 'UNK_REGION'
   END AS region_code,
   CASE

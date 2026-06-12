@@ -36,7 +36,7 @@ Looker Studio / Google Sheets → consumo ejecutivo
 
 ## 📊 Dashboard Looker Studio
 
-🔗 [Ver dashboard en vivo] (https://lookerstudio.google.com/reporting/e06687b5-e038-4316-94be-3739edc206b8/page/srjsF/edit)
+🔗 [Ver dashboard en vivo](https://lookerstudio.google.com/reporting/e06687b5-e038-4316-94be-3739edc206b8/page/srjsF/edit)
 
 ### Executive Overview
 ![Executive Overview](looker/screenshots/01_executive_overview.png)
@@ -57,8 +57,7 @@ latam-uniforms-portfolio/
 │   ├── 01_staging/    ← limpieza de datos crudos
 │   ├── 02_dimensions/ ← dim_date, dim_region, dim_size, dim_item, dim_employee
 │   ├── 03_facts/      ← fct_uniform_transactions, fct_inventory_daily
-│   ├── 04_marts/      ← KPIs, forecast, safety stock, recomendación
-│   └── 05_alerts/     ← alertas operacionales
+│   └── 04_marts/      ← KPIs, forecast, safety stock, recomendación, alertas
 ├── scripts/
 │   ├── upload_to_bq.py   ← carga CSVs a BigQuery
 │   ├── run_all_sql.py    ← ejecuta todos los SQLs en orden
