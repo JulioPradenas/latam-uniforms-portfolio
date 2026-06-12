@@ -17,6 +17,21 @@ para una aerolínea LATAM — desde datos crudos hasta dashboard ejecutivo.
 
 ---
 
+## 🎯 Resultados clave
+
+| Métrica | Valor |
+|---|---|
+| Transacciones procesadas | **~9.000 filas** crudas → modelo dimensional limpio |
+| SKU analizados (región × ítem × talla) | **213** combinaciones |
+| Plan de compra 2027 | **14.838 unidades** priorizadas por criticidad |
+| Riesgos detectados | **6 stockouts · 12 críticos · 18 bajos** |
+| Alertas operacionales activas | **3** con owner y SLA asignado |
+
+> El motor prioriza automáticamente los SKU de mayor velocidad de demanda:
+> el #1 del ranking es **Zapatos XS — Miami** (demanda 175, stock 0).
+
+---
+
 ## 🏗 Arquitectura
 ```
 Fuente (CSV)
@@ -52,7 +67,7 @@ Looker Studio / Google Sheets → consumo ejecutivo
 ## 🗂 Estructura del proyecto
 ```
 latam-uniforms-portfolio/
-├── data_gen/          ← CSVs sintéticos (5.000+ filas)
+├── data_gen/          ← CSVs sintéticos (~9.000 filas) + generadores
 ├── sql/
 │   ├── 01_staging/    ← limpieza de datos crudos
 │   ├── 02_dimensions/ ← dim_date, dim_region, dim_size, dim_item, dim_employee
@@ -97,12 +112,16 @@ latam-uniforms-portfolio/
 
 Tabla `mart_purchase_reco_2027` — **213 recomendaciones** priorizadas:
 
-| Prioridad | Significado | Acción |
-|---|---|---|
-| P1 STOCKOUT | Sin stock disponible | Compra inmediata |
-| P2 CRITICO | Stock < Reorder Point | Próxima orden |
-| P3 BAJO | Stock < ROP × 1.5 | Próximo trimestre |
-| P4 OK | Stock suficiente | Sin acción |
+| Prioridad | Significado | Acción | SKU | A comprar |
+|---|---|---|---|---|
+| P1 STOCKOUT | Sin stock disponible | Compra inmediata | 6 | 1.116 u |
+| P2 CRITICO | Stock < Reorder Point | Próxima orden | 12 | 1.798 u |
+| P3 BAJO | Stock < ROP × 1.5 | Próximo trimestre | 18 | 2.138 u |
+| P4 OK | Stock suficiente | Sin acción | 177 | 9.786 u |
+
+> El *reorder point* y el *safety stock* se calculan con la fórmula estadística de
+> servicio al 95% (z = 1.645), combinando varianza de demanda y de *lead time*.
+> Ver [Stock Policy](docs/stock_policy.md).
 
 ---
 
@@ -162,6 +181,20 @@ python scripts/run_all_sql.py
 - **Python** — carga de datos y exportación
 - **Google Sheets / Excel** — output ejecutivo
 
+---
+
+## 🧠 Qué demuestra este proyecto
+
+- **Modelado dimensional** — star schema con dimensiones conformadas y dos tablas de hechos.
+- **SQL analítico avanzado** — window functions (`ROW_NUMBER`, `RANK`, `PERCENTILE_CONT`),
+  CTEs encadenadas, deduplicación y normalización de datos sucios.
+- **Limpieza de datos reales** — tallas y regiones inconsistentes (`Extra Large`, `LL`, `xs`)
+  normalizadas con reglas documentadas y trazables.
+- **Estadística aplicada** — forecast por escenarios y *safety stock* con nivel de servicio.
+- **Pensamiento de negocio** — la salida es un plan de compra accionable, no solo tablas.
+- **Visualización ejecutiva** — dashboard de 3 páginas orientado a decisión.
+
+---
 
 ### Páginas
 
