@@ -12,16 +12,24 @@ WITH annual AS (
 ),
 
 inventory AS (
+  -- Ultimo stock conocido POR combinacion region×item×talla.
+  -- El inventario no es un snapshot diario completo (cada fecha trae pocas filas),
+  -- por eso un MAX(snapshot_date) global devolveria casi nada.
   SELECT
     region_code,
     item        AS item_name,
     size_code,
     SUM(stock_qty) AS on_hand
-  FROM `latam-uniforms-portfolio.latam_uniforms.fct_inventory_daily`
-  WHERE snapshot_date = (
-    SELECT MAX(snapshot_date)
+  FROM (
+    SELECT
+      region_code, item, size_code, stock_qty,
+      ROW_NUMBER() OVER (
+        PARTITION BY region_code, item, size_code
+        ORDER BY snapshot_date DESC
+      ) AS rn
     FROM `latam-uniforms-portfolio.latam_uniforms.fct_inventory_daily`
   )
+  WHERE rn = 1
   GROUP BY 1,2,3
 )
 

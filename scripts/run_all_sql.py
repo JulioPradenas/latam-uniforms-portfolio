@@ -291,12 +291,17 @@ SQLS = [
         lt.lead_time_days
       FROM weekly w
       LEFT JOIN (
+        -- Ultimo stock conocido por combinacion (el inventario no es snapshot diario completo)
         SELECT region_code, item AS item_name, size_code, stock_qty
-        FROM `latam-uniforms-portfolio.latam_uniforms.fct_inventory_daily`
-        WHERE snapshot_date = (
-          SELECT MAX(snapshot_date)
+        FROM (
+          SELECT region_code, item, size_code, stock_qty,
+            ROW_NUMBER() OVER (
+              PARTITION BY region_code, item, size_code
+              ORDER BY snapshot_date DESC
+            ) AS rn
           FROM `latam-uniforms-portfolio.latam_uniforms.fct_inventory_daily`
         )
+        WHERE rn = 1
       ) i USING (region_code, item_name, size_code)
       LEFT JOIN (
         SELECT region_code, item,
@@ -438,13 +443,18 @@ SQLS = [
       GROUP BY 1,2,3
     ),
     inventory AS (
+      -- Ultimo stock conocido por combinacion (el inventario no es snapshot diario completo)
       SELECT region_code, item AS item_name, size_code,
         SUM(stock_qty) AS on_hand
-      FROM `latam-uniforms-portfolio.latam_uniforms.fct_inventory_daily`
-      WHERE snapshot_date = (
-        SELECT MAX(snapshot_date)
+      FROM (
+        SELECT region_code, item, size_code, stock_qty,
+          ROW_NUMBER() OVER (
+            PARTITION BY region_code, item, size_code
+            ORDER BY snapshot_date DESC
+          ) AS rn
         FROM `latam-uniforms-portfolio.latam_uniforms.fct_inventory_daily`
       )
+      WHERE rn = 1
       GROUP BY 1,2,3
     )
     SELECT
